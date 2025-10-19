@@ -1,1 +1,12 @@
+# Eleventy build output
 _site/
+.cache/
+
+# Node.js dependencies
+node_modules/
+
+# Editor files
+.vscode/
+
+# Environment variables
+.env

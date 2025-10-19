@@ -1,0 +1,22 @@
+---
+  layout: layout.html
+  title: hello welcome to my website!
+---
+
+<p>i'm very and i'm just a boring ol' guy :)</p>
+<img src="assets/fucked_up_tbh.jpg" alt="fucked up tbh">
+
+<p>this website will probably be less boring in the future</p>
+<p>follow me on <a href="https://bsky.app/profile/tbh.vc">bluesky</a> to see me ramble like a crazy person</p>
+
+
+{% for post in collections.post %}
+<a href="{{ post.url }}" class="bubble">
+    <h2>
+      {{ post.data.title }}
+    </h2>
+    {{ post.content }}
+</a>
+
+
+{% endfor %}
