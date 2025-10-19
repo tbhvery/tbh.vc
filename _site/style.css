@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1f1f1f;
+  color: lightgray;
+  font-family: "Comic Sans MS";
+}
+
+header {
+  padding: 10px;
+  background: linear-gradient(#8ac3e5 0 10%, #214e94);
+  width: 100%;
+  color: white;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+a {
+  color: lightblue;
+}
+
+a:visited {
+  color: plum;
+}
