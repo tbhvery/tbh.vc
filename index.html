@@ -1,21 +1,20 @@
 ---
-layout: layout.html
+  layout: layout.html
+  title: hello welcome to my website!
 ---
-
-<h1>hello welcome to my website!</h1>
 
 <p>i'm very and i'm just a boring ol' guy :)</p>
 <p>this website will probably be less boring in the future</p>
-<img src="assets/tbhspin.webp" alt="spinning tbh">
+<img src="assets/tbhspin.webp" alt="spinning tbh" width="44px">
 <p>follow me on <a href="https://bsky.app/profile/tbh.vc">bluesky</a> to see me ramble like a crazy person</p>
 
 {% for post in collections.post %}
-  <hr />
-  <h2>
-    <a href="{{ post.url }}">{{ post.data.title }}</a>
-  </h2>
+<a href="{{ post.url }}" class="bubble">
+    <h2>
+      {{ post.data.title }}
+    </h2>
+    {{ post.content }}
+</a>
 
-  {{ post.content }}
+
 {% endfor %}
-
-<hr />
