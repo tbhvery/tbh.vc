@@ -32,7 +32,7 @@ jobs:
     - name: Deploy to neocities
       uses: bcomnes/deploy-to-neocities@v3
       with:
-        api_key: "86723b01fef849f1b8cfe038756190d2" #temporarily testing API
+        api_key: ${{secrets.NEOCITIES_API_TOKEN}}
         cleanup: true
         neocities_supporter: true # set this to true if you have a supporter account and want to bypass unsuported files filter.
         preview_before_deploy: true # print a deployment plan prior to waiting for files to upload.
