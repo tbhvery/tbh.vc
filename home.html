@@ -1,22 +1,28 @@
 ---
+  title: wassup
   layout: layout.html
-  title: hello welcome to my website!
 ---
 
-<p>i'm very and i'm just a boring ol' guy :)</p>
-<img src="assets/fucked_up_tbh.jpg" alt="fucked up tbh">
+<div class="text-float">
+  <img src="/assets/tbhspin.webp" width="44" style="float: left;">
+  <img src="/assets/tbhspin.webp" width="44" style="float: right;">
+  <span>i'm very and i'm just a person with a boring ol' website</span>
+</div>
+<p>this website will probably be less boring in the future (if i continue to work on it :P)</p>
+<p>follow me on <a href="https://bsky.app/profile/tbh.vc">bluesky</a> for no reason</p>
 
-<p>this website will probably be less boring in the future</p>
-<p>follow me on <a href="https://bsky.app/profile/tbh.vc">bluesky</a> to see me ramble like a crazy person</p>
+<p>this week's featured tbh:</p>
+<img src="/assets/fucked_up_tbh.jpg" alt="fucked up tbh">
 
+<h1>my blog</h1>
+<div class="cards">
+  {% for post in collections.post %}
+  <a href="{{ post.url }}" class="bubble">
+      <h2>
+        {{ post.data.title }}
+      </h2>
+      {{ post.content }}
+  </a>
+  {% endfor %}
+</div>
 
-{% for post in collections.post %}
-<a href="{{ post.url }}" class="bubble">
-    <h2>
-      {{ post.data.title }}
-    </h2>
-    {{ post.content }}
-</a>
-
-
-{% endfor %}
