@@ -1,7 +1,10 @@
 ---
-  title: wassup
+  title: welcome to tbh virtual club
   layout: layout.html
+  date: git Last Modified
 ---
+
+<p>the .vc in the domain name means <a href="/posts/first">virtual club</a> and definitely not vatican city just be clear</p>
 
 <div class="text-float">
   <img src="/assets/tbhspin.webp" width="44" style="float: left;">
@@ -21,7 +24,9 @@
       <h2>
         {{ post.data.title }}
       </h2>
-      {{ post.content }}
+      <p>
+        {{ post.content | truncate:40 }}
+      </p>
   </a>
   {% endfor %}
 </div>
