@@ -27,6 +27,8 @@ jobs:
     # If you have a different build process, replace this with your own build steps
     - name: Install deps and build
       run: |
+        npm ci @11ty/eleventy
+        npm ci luxon
         npx @11ty/eleventy
         
     # Here we deploy the folder named `public`
