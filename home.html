@@ -3,28 +3,31 @@
   layout: layout.html
 ---
 
+<script defer>
+  function tbhDies() {
+    document.getElementById("explode").play();
+    document.getElementById("die").play();
+    const tbh = document.getElementById("tbh");
+    tbh.src = "/assets/explosion.gif";
+    const gifDuration = 1300;
+    setTimeout(() => {
+      tbh.style.display = "none";
+    }, gifDuration);
+  }
+</script>
+
+<audio id="yippee" src="/assets/tbh-yippee.mp3" preload="auto"></audio>
+<audio id="explode" src="/assets/explosion.mp3" preload="auto"></audio>
+<audio id="die" src="/assets/die.mp3" preload="auto"></audio>
 <div class="text-float">
-  <img src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: right;">
-  <img src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: left;">
+  <img class="tbh" src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: left;" onclick="document.getElementById('yippee').play();">
+  <img class="tbh" src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: right;" onclick="document.getElementById('yippee').play();">
   <span>i'm very and i'm just a person with a boring ol' website</span>
 </div>
+<img id="tbh" src="https://r2.tbh.vc/fucked_up_tbh.jpg" alt="a genetic freak" class="text-float" onclick="tbhDies()">
 
-<p>follow me on <a href="https://bsky.app/profile/tbh.vc">bluesky</a> for no reason</p>
-<p>this week's featured tbh:</p>
+<h2>featured tbh image:</h2>
 <img src="https://r2.tbh.vc/FsVUEYUX0Bc9t-v.jpg" id="weekly" alt="tbh is being mutilated">
-
-<h1>my blog</h1>
-<div class="cards">
-  {% for post in collections.post %}
-  <a href="{{ post.url }}" style="text-decoration: none;">
-    <div class="bubble">
-          <h2>{{ post.data.title }}</h2>
-          <p><i>{{ post.date | postDate }}</i></p>
-          <p>{{ post.content | truncate:15 }}</p>
-    </div>
-  </a>
-  {% endfor %}
-</div>
 
 <style>
   #weekly {
@@ -32,5 +35,10 @@
     max-height: 500px;
     max-width: 500px;
     overflow: hidden;
+  }
+
+  .text-float {
+    text-align: center;
+    max-width: 500px;
   }
 </style>

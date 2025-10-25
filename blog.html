@@ -1,0 +1,16 @@
+---
+    layout: layout.html
+    title: the tbh dev blog
+---
+
+<div class="cards">
+  {% for post in collections.post reversed %}
+  <a class="bubble" href="{{ post.url }}" style="text-decoration: none;">
+    <div>
+          <h2>{{ post.data.title }}</h2>
+          <p><i>{{ post.date | postDate }}</i></p>
+          <p>{{ post.content | truncate:15 }}</p>
+    </div>
+  </a>
+  {% endfor %}
+</div>

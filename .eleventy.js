@@ -13,6 +13,6 @@ export default function(eleventyConfig) {
     });
 
     eleventyConfig.addFilter("postDate", (dateObj) => {
-      return DateTime.fromJSDate(dateObj, {zone: 'pst'}).toFormat("dd MMM yyyy hh:mm");
+      return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("MMMM dd, yyyy");
     });
   };

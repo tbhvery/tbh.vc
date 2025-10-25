@@ -1,7 +1,7 @@
 ---
 title: the future of tbh.vc
 tags: post
-date: Created
+date: 2025-10-20
 ---
 
 uhh i was just thinking this website could just be a club for people who love and appreciate the autism tbh creature or something

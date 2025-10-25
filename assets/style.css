@@ -13,8 +13,8 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-header img:hover {
-  transform: scale(110%);
+nav img:hover {
+  transform: scale(120%);
 }
 
 nav {
@@ -33,13 +33,13 @@ nav ul {
   column-gap: 5px;
 }
 
-nav ul a {
+nav a {
   text-decoration: none;
 }
 
 nav ul li {
   font-family: serif;
-  color: gainsboro;
+  color: whitesmoke;
   font-weight: bold;
   font-size: 32px;
   padding: 20px;
@@ -58,20 +58,13 @@ nav ul li:hover {
 
 section {
   max-width: 100%;
-  background-color: whitesmoke;
+  background-color: white;
   border-color: #6f6f6f;
-  border: 2px gray solid;
   border-radius: 2px; 
-  box-shadow: 2px 2px #8f8f8f;
   display: flex;
   flex-direction: column;
   margin: 20px; 
   padding: 50px;
-}
-
-.text-float {
-  text-align: center;
-  max-width: 600px;
 }
 
 .cards {
@@ -91,7 +84,7 @@ a {
   background: linear-gradient(white 0 10%, #8ac3e5);
   border: #8ac3e5 solid 4px;
   border-radius: 4px;
-  transform: rotate(1deg);
+  transform: rotate(2deg);
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -104,8 +97,8 @@ a {
   border-radius: 2px;
 }
 
-.bubble:nth-child(even) {
-  transform: rotate(-1deg);
+.bubble:nth-child(odd) {
+  transform: rotate(-2deg);
 }
 
 .bubble:hover {

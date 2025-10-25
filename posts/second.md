@@ -1,7 +1,7 @@
 ---
 title: the second coming of tbh
 tags: post
-date: Created
+date: 2025-10-24
 ---
 
 good news everyone!
