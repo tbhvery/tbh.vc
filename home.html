@@ -4,29 +4,25 @@
   date: git Last Modified
 ---
 
-<p>the .vc in the domain name means <a href="/posts/first">virtual club</a> and definitely not vatican city just be clear</p>
-
 <div class="text-float">
-  <img src="/assets/tbhspin.webp" width="44" style="float: left;">
-  <img src="/assets/tbhspin.webp" width="44" style="float: right;">
+  <img src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: right;">
+  <img src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: left;">
   <span>i'm very and i'm just a person with a boring ol' website</span>
 </div>
-<p>this website will probably be less boring in the future (if i continue to work on it :P)</p>
-<p>follow me on <a href="https://bsky.app/profile/tbh.vc">bluesky</a> for no reason</p>
 
+<p>follow me on <a href="https://bsky.app/profile/tbh.vc">bluesky</a> for no reason</p>
 <p>this week's featured tbh:</p>
-<img src="/assets/fucked_up_tbh.jpg" alt="fucked up tbh">
+<img src="https://r2.tbh.vc/fucked_up_tbh.jpg" alt="fucked up tbh">
 
 <h1>my blog</h1>
 <div class="cards">
   {% for post in collections.post %}
-  <a href="{{ post.url }}" class="bubble">
-      <h2>
-        {{ post.data.title }}
-      </h2>
-      <p>
-        {{ post.content | truncate:40 }}
-      </p>
+  <a href="{{ post.url }}" style="text-decoration: none;">
+    <div class="bubble">
+          <h2>{{ post.data.title }}</h2>
+          <p><i>{{ post.date | postDate }}</i></p>
+          <p>{{ post.content | truncate:15 }}</p>
+    </div>
   </a>
   {% endfor %}
 </div>
