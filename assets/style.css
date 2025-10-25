@@ -69,10 +69,6 @@ section {
   padding: 50px;
 }
 
-section img {
-  max-height: 400px;
-}
-
 .text-float {
   text-align: center;
   max-width: 600px;
