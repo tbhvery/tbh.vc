@@ -1,5 +1,5 @@
 ---
-  title: welcome to tbh virtual club
+  title: welcome to tbh virtual club!!
   layout: layout.html
 ---
 
@@ -11,31 +11,28 @@
     const btn = document.getElementById("btn");
     tbh.src = "/assets/explosion.gif";
     btn.disabled = "true";
-    const gifDuration = 1300;
+    document.getElementById("alert").innerText = "why...?";
+    tbh.style.animation = "none";
     setTimeout(() => {
       btn.style.display = "none";
-    }, gifDuration);
-    document.getElementById("alert").innerText = "why did you do that... :c"
+    }, 1300);
   }
 </script>
 
 <div class="text-center">
   <img class="tbh" src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: left;" onclick="document.getElementById('yippee').play();">
   <img class="tbh" src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: right;" onclick="document.getElementById('yippee').play();">
-  <p id="alert">good morning/afternoon/evening; this is an alert! <b>do not</b> click on the guy underneath...</p>
+  <p id="alert">good morning/afternoon/evening; this is an alert! <b>do not</b> click on the guy below...</p>
 </div>
 
-<div>
+<div class="text-center">
   <audio id="yippee" src="/assets/tbh-yippee.mp3" preload="auto"></audio>
   <audio id="explode" src="/assets/explosion.mp3" preload="auto"></audio>
   <audio id="die" src="/assets/die.mp3" preload="auto"></audio>
 
-  <button id="btn"onclick="tbhDies()">
-    <img id="tbh" src="https://r2.tbh.vc/fucked_up_tbh.jpg" alt="a genetic freak">
+  <button id="btn" onclick="tbhDies()">
+    <img id="tbh" class="shake" src="https://r2.tbh.vc/fucked_up_tbh.jpg" alt="a genetic freak">
   </button>
-
-  <h2>featured tbh image:</h2>
-  <img src="https://r2.tbh.vc/FsVUEYUX0Bc9t-v.jpg" id="weekly" alt="tbh is being mutilated">
 </div>
 
 <style>
@@ -51,14 +48,32 @@
     height: 44px;
   }
 
-  button {
-    cursor: pointer;
-    background: none;
-    border: none;
+  .center {
+    display: flex;
+    justify-content: center;
   }
 
   #tbh {
     width: 320px;
     height: 320px;
   }
+
+  .shake:hover {
+    animation: shake 0.1s linear infinite;
+  }
+
+  button {
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  @keyframes shake {
+  0% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(2px);
+  }
+}
 </style>

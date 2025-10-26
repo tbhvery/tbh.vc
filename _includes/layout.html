@@ -24,11 +24,14 @@
           <a href="/thanks"><li>join club</li></a>
         </ul>
         <iframe style="border: #8ac3e5 solid 8px; width: 284px; height: 426px; margin: 0; padding: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=1691200172/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=2201039158/transparent=true/" seamless><a href="https://botanicalhouse.bandcamp.com/album/spring-lovers">Spring Lovers by Minuano</a></iframe>
-        <div>
+        <div id="badges">
           <a href="https://neocities.org">
             <img src="https://i.postimg.cc/fWm1xt12/a3.gif" alt="hosted on neocities">
           </a>
           <img src="https://64.media.tumblr.com/b4ee01d99adaa22d2eae197a76d26ab5/00ab7168b67b3c99-3d/s100x200/0b9ad6cc3f154da54846ac05f0afffd93a3b8964.gifv" alt="powered by the void">
+          <a href="https://tbh.vc">
+            <img src="https://r2.tbh.vc/tbh-badge.gif" alt="tbh.vc badge">
+          </a>
         </div>
       </nav>
       <section>
@@ -38,3 +41,66 @@
     </main>
   </body>
 </html>
+
+<style>
+  main {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+  }
+
+  nav img:hover {
+    transform: scale(120%);
+  }
+
+  nav {
+    margin: 0;
+    float: left;
+    width: 100%;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  nav ul li {
+    font-family: serif;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 20px;
+    background: linear-gradient(#8ac3e5 0 10%, #214e94);
+    border: #8ac3e5 solid 8px;
+    transition: 0.2s filter;
+  }
+
+  nav ul:hover li {
+    filter: brightness(0.9);
+  }
+
+  nav ul li:hover {
+    filter: brightness(1.1);
+  }
+
+  section {
+    max-width: 100%;
+    background-color: white;
+    border: black dashed 2px;
+    margin: 20px; 
+    padding: 50px;
+  }
+
+  #badges {
+    margin-top: -8px;
+    padding: 8px;
+    background: #8ac3e5;
+  }
+</style>

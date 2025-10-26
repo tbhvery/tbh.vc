@@ -5,12 +5,42 @@
 
 <div class="cards">
   {% for post in collections.post reversed %}
-  <a class="bubble" href="{{ post.url }}" style="text-decoration: none;">
-    <div>
-          <h2>{{ post.data.title }}</h2>
-          <p><i>{{ post.date | postDate }}</i></p>
-          <p>{{ post.content | truncate:15 }}</p>
-    </div>
-  </a>
+    <a href="{{ post.url }}" class="bubble">
+      <div class="heading">
+        <h2>{{ post.data.title }}</h2>
+      </div>
+      <p><i>{{ post.date | postDate }}</i></p>
+      <p>{{ post.content | truncate:30 }}</p>
+    </a>
   {% endfor %}
 </div>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .bubble {
+    color: black;
+    border: rgb(60, 183, 224) dotted 2px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .bubble:hover {
+    transform: scale(101%);
+    z-index: 10;
+  }
+  .bubble p {
+    margin: 10px;
+  }
+  .heading {
+    background: linear-gradient(white 0 10%, #8ac3e5);;
+    margin: 0;
+    padding: 10px;
+  }
+</style>
