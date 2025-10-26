@@ -59,7 +59,7 @@ nav ul li:hover {
 section {
   max-width: 100%;
   background-color: white;
-  border-color: #6f6f6f;
+  border: #f8f8f8 solid 8px;
   border-radius: 2px; 
   display: flex;
   flex-direction: column;

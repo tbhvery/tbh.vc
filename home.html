@@ -8,26 +8,35 @@
     document.getElementById("explode").play();
     document.getElementById("die").play();
     const tbh = document.getElementById("tbh");
+    const btn = document.getElementById("btn");
     tbh.src = "/assets/explosion.gif";
+    btn.disabled = "true";
     const gifDuration = 1300;
     setTimeout(() => {
-      tbh.style.display = "none";
+      btn.style.display = "none";
     }, gifDuration);
+    document.getElementById("alert").innerText = "why did you do that... :c"
   }
 </script>
 
-<audio id="yippee" src="/assets/tbh-yippee.mp3" preload="auto"></audio>
-<audio id="explode" src="/assets/explosion.mp3" preload="auto"></audio>
-<audio id="die" src="/assets/die.mp3" preload="auto"></audio>
-<div class="text-float">
+<div class="text-center">
   <img class="tbh" src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: left;" onclick="document.getElementById('yippee').play();">
   <img class="tbh" src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: right;" onclick="document.getElementById('yippee').play();">
-  <span>i'm very and i'm just a person with a boring ol' website</span>
+  <p id="alert">good morning/afternoon/evening; this is an alert! <b>do not</b> click on the guy underneath...</p>
 </div>
-<img id="tbh" src="https://r2.tbh.vc/fucked_up_tbh.jpg" alt="a genetic freak" class="text-float" onclick="tbhDies()">
 
-<h2>featured tbh image:</h2>
-<img src="https://r2.tbh.vc/FsVUEYUX0Bc9t-v.jpg" id="weekly" alt="tbh is being mutilated">
+<div>
+  <audio id="yippee" src="/assets/tbh-yippee.mp3" preload="auto"></audio>
+  <audio id="explode" src="/assets/explosion.mp3" preload="auto"></audio>
+  <audio id="die" src="/assets/die.mp3" preload="auto"></audio>
+
+  <button id="btn"onclick="tbhDies()">
+    <img id="tbh" src="https://r2.tbh.vc/fucked_up_tbh.jpg" alt="a genetic freak">
+  </button>
+
+  <h2>featured tbh image:</h2>
+  <img src="https://r2.tbh.vc/FsVUEYUX0Bc9t-v.jpg" id="weekly" alt="tbh is being mutilated">
+</div>
 
 <style>
   #weekly {
@@ -37,8 +46,19 @@
     overflow: hidden;
   }
 
-  .text-float {
+  .text-center {
     text-align: center;
-    max-width: 500px;
+    height: 44px;
+  }
+
+  button {
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  #tbh {
+    width: 320px;
+    height: 320px;
   }
 </style>
