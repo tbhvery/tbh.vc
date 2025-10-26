@@ -19,17 +19,17 @@
   }
 </script>
 
-<div class="text-center">
+<audio id="yippee" src="/assets/tbh-yippee.mp3" preload="auto"></audio>
+<audio id="explode" src="/assets/explosion.mp3" preload="auto"></audio>
+<audio id="die" src="/assets/die.mp3" preload="auto"></audio>
+
+<div class="text-center alert">
   <img class="tbh" src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: left;" onclick="document.getElementById('yippee').play();">
   <img class="tbh" src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: right;" onclick="document.getElementById('yippee').play();">
   <p id="alert">good morning/afternoon/evening; this is an alert! <b>do not</b> click on the guy below...</p>
 </div>
 
 <div class="text-center">
-  <audio id="yippee" src="/assets/tbh-yippee.mp3" preload="auto"></audio>
-  <audio id="explode" src="/assets/explosion.mp3" preload="auto"></audio>
-  <audio id="die" src="/assets/die.mp3" preload="auto"></audio>
-
   <button id="btn" onclick="tbhDies()">
     <img id="tbh" class="shake" src="https://r2.tbh.vc/fucked_up_tbh.jpg" alt="a genetic freak">
   </button>
@@ -43,14 +43,14 @@
     overflow: hidden;
   }
 
-  .text-center {
-    text-align: center;
-    height: 44px;
+  .alert {
+    padding: 10px;
+    border: gainsboro outset 4px;
+    box-shadow: 2px 2px gainsboro;
   }
 
-  .center {
-    display: flex;
-    justify-content: center;
+  .text-center {
+    text-align: center;
   }
 
   #tbh {
@@ -66,6 +66,7 @@
     cursor: pointer;
     background: none;
     border: none;
+    margin-top: 50px;
   }
 
   @keyframes shake {

@@ -4,15 +4,6 @@ body {
   font-family: "Comic Sans MS";
 }
 
-header {
-  color: gainsboro;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background: linear-gradient(#8ac3e5 0 10%, #214e94);
-  font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
 a {
   color: rgb(60, 183, 224);
 }
