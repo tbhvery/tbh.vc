@@ -14,12 +14,10 @@ export default async function () {
   const feed = await parser.parseString(xml);
 
   // Grab just the latest entry
-  const latest = feed.items[0]; // Atom feeds are usually ordered newest → oldest
+  const latest = feed.items[0];
 
-  // Return only what you need
   return {
     title: latest.title,
-    link: latest.link,
     content: latest.contentSnippet || latest.content,
     date: latest.isoDate,
   };
