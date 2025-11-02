@@ -4,7 +4,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.ignores.add("README.md");
 
-    eleventyConfig.addFilter("truncate", function (str, len) {
+    eleventyConfig.addFilter("truncate", (str, len) => {
       if (!str) return "";
       const words = str.split(/\s+/);
       if (words.length <= len) return str;

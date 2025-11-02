@@ -7,7 +7,7 @@
   function tbhDies() {
     document.getElementById("explode").play();
     document.getElementById("die").play();
-    const tbh = document.getElementById("tbh");
+    const tbh = document.getElementById("freak");
     const btn = document.getElementById("btn");
     tbh.src = "/assets/explosion.gif";
     btn.disabled = "true";
@@ -19,19 +19,32 @@
   }
 </script>
 
+<audio id="yippeee" src="/assets/yipee.mp3" preload="auto"></audio>
 <audio id="yippee" src="/assets/tbh-yippee.mp3" preload="auto"></audio>
 <audio id="explode" src="/assets/explosion.mp3" preload="auto"></audio>
 <audio id="die" src="/assets/die.mp3" preload="auto"></audio>
 
+<div class="status">
+  <div class="speech">
+    <p>{{ status.content }}</p>
+    <a href="https://status.cafe/users/very">
+      <small>view on status.cafe</small>
+    </a>
+    <br />
+    <small>{{ status.date | date: "%b %d, %Y" }}</small>
+  </div>
+  <img class="tbh" src="https://r2.tbh.vc/Tbh.webp" alt="tbh" onclick="document.getElementById('yippeee').play();">
+</div>
+
 <div class="text-center alert">
-  <img class="tbh" src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: left;" onclick="document.getElementById('yippee').play();">
-  <img class="tbh" src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: right;" onclick="document.getElementById('yippee').play();">
+  <img src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: left;" onclick="document.getElementById('yippee').play();">
+  <img src="https://r2.tbh.vc/tbhspin.webp" width="44" style="float: right;" onclick="document.getElementById('yippee').play();">
   <p id="alert">good morning/afternoon/evening; this is an alert! <b>do not</b> click on the guy below...</p>
 </div>
 
 <div class="text-center">
   <button id="btn" onclick="tbhDies()">
-    <img id="tbh" class="shake" src="https://r2.tbh.vc/fucked_up_tbh.jpg" alt="a genetic freak">
+    <img id="freak" class="tbh" class="shake" src="https://r2.tbh.vc/fucked_up_tbh.jpg" alt="a genetic freak">
   </button>
 </div>
 
@@ -53,13 +66,55 @@
     text-align: center;
   }
 
-  #tbh {
+  .tbh {
     width: 320px;
     height: 320px;
   }
 
   .shake:hover {
     animation: shake 0.1s linear infinite;
+  }
+
+  .status {
+    display: flex;
+    max-height: 320px;
+    justify-content: center;
+  }
+
+  .speech {
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 15px 40px;
+    border: 3px solid black;
+    border-radius: 20px;
+    max-width: 300px;
+    margin: 50px 0px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .speech::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: -34px;
+    width: 0;
+    height: 0;
+    border: 16px solid transparent;
+    border-left: 18px solid black;
+  }
+
+  .speech::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: -30px;
+    width: 0;
+    height: 0;
+    border: 16px solid transparent;
+    border-left: 18px solid white;
+    z-index: 1;
   }
 
   button {
