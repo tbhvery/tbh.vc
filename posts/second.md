@@ -1,6 +1,6 @@
 ---
 title: how this website works
-tags: post
+tags: post, webdev
 date: 2025-10-24
 ---
 

@@ -1,45 +1,69 @@
 ---
-    layout: layout.html
-    title: the tbh dev blog
+layout: layout.html
+title: the tbh dev blog
 ---
 
 <div class="cards">
   {% for post in collections.post reversed %}
-    <a href="{{ post.url }}" class="bubble">
+  <a href="{{ post.url }}">
+    <article class="bubble">
       <div class="heading">
         <h2>{{ post.data.title }}</h2>
       </div>
-      <p><i>{{ post.date | postDate }}</i></p>
-      <p>{{ post.content | truncate:30 }}</p>
-    </a>
+      <div>
+        <small><i>{{ post.date | postDate }}</i></small>
+        <p>
+          {{ post.content | truncate:30 }}
+        </p>
+      </div>
+    </article>
+  </a>
+
   {% endfor %}
 </div>
 
 <style>
   a {
-    text-decoration: none;
+    all: unset;
+    cursor: pointer;
   }
+
   .cards {
     display: flex;
     flex-direction: column;
     gap: 1em;
   }
+
   .bubble {
-    color: black;
     border: rgba(60, 183, 224, 0.7) dashed 4px;
     font-family: 'Times New Roman', Times, serif;
     transition: all 0.2s;
     white-space: nowrap;
+
   }
+
   .bubble:hover {
     transform: scale(101%);
     z-index: 10;
   }
-  .bubble p {
+
+  .bubble small {
+    color: black;
     margin: 10px;
   }
+
+  .bubble p {
+    color: black;
+    margin: 10px;
+  }
+
+  .bubble h2 {
+    color: black;
+  }
+
   .heading {
-    background: linear-gradient(white 0 10%, #8ac3e5);;
+    background: linear-gradient(white 0 10%, #8ac3e5);
+    ;
     margin: 0;
     padding: 10px;
   }
