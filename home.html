@@ -26,12 +26,7 @@
 
 <div class="status">
   <div class="speech">
-    <p>{{ status.content }}</p>
-    <a href="https://status.cafe/users/very">
-      <small>view on status.cafe</small>
-    </a>
-    <br />
-    <small>{{ status.date | date: "%b %d, %Y" }}</small>
+    <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=very" defer></script>
   </div>
   <img class="tbh" src="https://r2.tbh.vc/Tbh.webp" alt="tbh" onclick="document.getElementById('yippeee').play();">
 </div>
@@ -83,9 +78,12 @@
 
   .speech {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     color: black;
-    padding: 15px 40px;
+    padding: 15px 50px;
     border: 3px solid black;
     border-radius: 20px;
     max-width: 300px;
@@ -115,6 +113,14 @@
     border: 16px solid transparent;
     border-left: 18px solid white;
     z-index: 1;
+  }
+
+  #statuscafe-username {
+    margin-bottom: .5em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #statuscafe-content {
+      margin: 0 1em 0.5em 1em;
   }
 
   button {
