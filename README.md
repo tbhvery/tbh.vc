@@ -1,5 +1,7 @@
 # tbh.vc
 
-A website using 11ty and hosted by neocities.org!
+a random personal website using 11ty and hosted by neocities.org!
 
-yup
+i'm just gonna throw a bunch of random stuff into this website.
+
+yup.

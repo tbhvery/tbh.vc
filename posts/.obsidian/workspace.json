@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "seventh.md",
+                "file": "eighth.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "seventh"
+              "title": "eighth"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "seventh.md",
+                "file": "eighth.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for seventh"
+              "title": "Backlinks for eighth"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "seventh.md",
+                "file": "eighth.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from seventh"
+              "title": "Outgoing links from eighth"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "seventh.md",
+                "file": "eighth.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of seventh"
+              "title": "Outline of eighth"
             }
           }
         ]
@@ -186,12 +186,14 @@
   },
   "active": "4121e70dee9869d8",
   "lastOpenFiles": [
+    "sixth.md",
     "seventh.md",
+    "eighth.md",
     "fifth.md",
     "first.md",
     "fourth.md",
     "second.md",
-    "seventh.md",
+    "eighth.md",
     "third.md"
   ]
 }

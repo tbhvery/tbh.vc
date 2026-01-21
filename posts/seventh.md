@@ -1,12 +1,11 @@
 ---
-title: rebrand redesign refactor
+title: the
 tags: post
-date: 2026-01-20
+date: 2025-11-15
 ---
-hello internet! it's been a while. happy new year!!!
 
-i want to redesign this website. i'll explain down below in more detail, but 
+hello internet! i've added a [musics page](/music) and added my first album, [*tbh rpg adventures*](/music)!! well, the term album is *generous*. it's a collection of small songs that kind of convey an idea rather than actual music. i've been making little songs like this for the past 5 years in FL Studio primarily using [miniBit](https://www.audiothing.net/instruments/minibit/) (i got from humble bundle :P). 
 
-i want it to be easier for me to post stuff on here. i guess i'm using obsidian to edit these blog posts now (i was previously just writing them in vscode). i already use obsidian as my primary note taking app, so i'm pretty used to it.
+update on my phone, i had to install some more apps. first of all, i installed my grocery store's app for scanning items and adding coupons. i shop at smith's since that's the closest grocery store to me.
 
-i wanna make video games... i bought a book and i am starting to make games in godot. my executive dysfunction kind of hinders me though so it's been tough.
+hey i'm also customizing my steam deck finally using [decky loader](https://decky.xyz). maybe i'll start using it more. i do need to clear [my backlog...](https://steamcommunity.com/id/tbhvery/)
