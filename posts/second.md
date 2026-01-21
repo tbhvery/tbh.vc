@@ -1,9 +1,10 @@
 ---
 title: how this website works
-tags: post, webdev
+tags:
+  - post
+  - webdev
 date: 2025-10-24
 ---
-
 good news everyone!
 
 i've updated the crap out of the website and now it has a little more **personality**

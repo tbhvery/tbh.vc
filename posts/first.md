@@ -3,7 +3,6 @@ title: the future of tbh.vc
 tags: post
 date: 2025-10-20
 ---
-
 uhh i was just thinking this website could just be a club for people who love and appreciate the autism tbh creature or something
 
 anyway i updated the about us page and the vc stands for virtual club now

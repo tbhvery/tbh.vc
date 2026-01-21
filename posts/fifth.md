@@ -3,7 +3,6 @@ title: i played some golf
 tags: post
 date: 2025-11-02
 ---
-
 hello internet! i am tired and sore from golfing 18 holes (i tuckered myself on the driving range in the first hour) so this blog entry will be shorter. also thank goodness it's not daylight savings!
 
 i'm currently listening to [c418](https://c418.bandcamp.com) - it's good nostalgic music. helps me focus when i'm reading or if i'm working on things like this website.
