@@ -1,6 +1,7 @@
 ---
 title: rebrand redesign refactor
-tags: post
+tags:
+  - post
 date: 2026-01-20
 ---
 hello internet! it's been a while. happy new year!!!

@@ -4,7 +4,7 @@ tags:
   - post
 date: 2025-11-01
 ---
-hello internet welcome to another blog post!
+2hello internet welcome to another blog post!
 
 i need to learn to speak my mind more often. i've updated the front page to show my current status on [status.cafe](https://status.cafe) -  it'll give you guys a fun way to see what i'm currently thinking. this is in addition to writing more blog posts. i don't plan on having a set schedule, but i would like it to be a regular habit.
 
